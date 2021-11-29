@@ -61,4 +61,8 @@ public class Person {
                 ", age=" + age + address +
                 '}';
     }
+
+    public void sayHello(){
+        System.out.println("Hejsan, jag är en Person som heter " + getFirst_name());
+    }
 }

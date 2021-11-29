@@ -10,5 +10,10 @@ public class School {
         System.out.println(p2);
         s1.greet();
         System.out.println(t1);
+
+        Person p3 = new Student("Den nya studenten", "Efternamn", (short) 99);
+        p3.sayHello(); // p3 är en Student, Student har implementerat en egen version av sayHello, det är den som används här
+        p2.sayHello(); // p2 är en Person, sayHello från Person-klassen används
+        t1.sayHello(); // t1 är en Teacher, Teacher har ingen egen implementation av sayHello, istället används basklassen, Persons implementation
     }
 }

@@ -8,4 +8,8 @@ public class Student extends Person {
     public void greet(){
         System.out.println("Hej jag heter " + getFirst_name() + " och är student");
     }
+
+    public void sayHello(){
+        System.out.println("Studenten " + getFirst_name() + " säger hej");
+    }
 }
