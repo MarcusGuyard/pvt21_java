@@ -17,6 +17,17 @@ public class Address {
         this.country = country;
     }
 
+    @Override
+    public String toString() {
+        return "Address{" +
+                "street='" + street + '\'' +
+                ", street_no='" + street_no + '\'' +
+                ", apartment_no='" + apartment_no + '\'' +
+                ", zip_code='" + zip_code + '\'' +
+                ", city='" + city + '\'' +
+                ", country='" + country + '\'' +
+                '}';
+    }
     /*
     street: str
     street_no: str

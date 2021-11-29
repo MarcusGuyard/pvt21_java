@@ -15,10 +15,7 @@ public class Person {
      */
 
     public Person(String first_name, String last_name, Short age){
-        this.first_name = first_name;
-        this.last_name = last_name;
-        this.age = age;
-        this.address = new Address("","","","", "", "");
+        this(first_name, last_name, age, new Address("","","","", "", ""));
     }
 
     public Person(String first_name, String last_name, Short age, Address address) {
@@ -61,7 +58,7 @@ public class Person {
         return "Person{" +
                 "first_name='" + first_name + '\'' +
                 ", last_name='" + last_name + '\'' +
-                ", age=" + age +
+                ", age=" + age + address +
                 '}';
     }
 }
